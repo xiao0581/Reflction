@@ -15,5 +15,10 @@ namespace Reflction
         {
             Skills = skills;
         }
+
+       public override string ToString()
+        {
+            return $"Name: {Name}, BirthOfYear: {BirthOfYear}, Skills: {string.Join(", ", Skills)}";
+        }
     }
 }
